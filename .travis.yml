@@ -5,6 +5,6 @@ install:
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq lcov curl
 script:
-  - curl -sSL https://cmake.org/files/v3.5/cmake-3.5.1-Linux-x86_64.tar.gz | sudo tar -xzC /opt && mv /opt/cmake-3.5.1-Linux-x86_64/bin/* /usr/bin/
+  - curl -sSL https://cmake.org/files/v3.5/cmake-3.5.1-Linux-x86_64.tar.gz | sudo tar -xzC /opt && sudo mv /opt/cmake-3.5.1-Linux-x86_64/bin/* /usr/bin/
   - mkdir build && cd build && cmake3 -DCMAKE_BUILD_TYPE=Debug .. && cmake3 --build . && cmake3 --build . --target --coveralls
 
