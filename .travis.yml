@@ -1,0 +1,10 @@
+---
+language: cpp
+compiler: gcc
+install:
+  - sudo add-apt-repository ppa:george-edison55/cmake-3.x
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq lcov curl cmake3
+script:
+  - mkdir build && cd build && cmake3 -DCMAKE_BUILD_TYPE=Debug .. && cmake3 --build . && cmake3 --build . --target --coveralls
+

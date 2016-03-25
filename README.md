@@ -1,2 +1,15 @@
 # borg
-Borg is an inventory collection and dispersal system.
+borg is an inventory collection and dispersal system.
+
+### Note: Work In Progress
+
+borg is a personal project designed to solve a niche problem of inventory management at scale.
+
+Yes, there are many inventory management systems out there, but none that currently integrate the problems of "desired state" with "actual state" and integrate with things like a distributed document store as well as automation tooling, as well as the ability to poll for status from each machine.
+
+This is all just a vague notion in my head right now, and will focus on very specific products initially, with generalization being the end goal.
+
+
+
+
+
